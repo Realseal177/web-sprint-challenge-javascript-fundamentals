@@ -26,13 +26,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    A.  1. .map() - converts data. Returns a brand new array. Best used as a quick way to generate a whole new array from your existing one.
+        2. .reduce() - reduces an array into a single value. Usually used when looking for the sum of average of a bunch of numbers in an array
+        3. .filter() - helps to filter out things in an array and return a new array. Used for eliminating elements in an array that one doesn't want to see. 
+
 2. Explain the difference between a callback and a higher order function.
+
+    A. The higher order function can pass other functions as arguments. The callback function is the function being called by the higher order function
 
 3. Explain what a closure is.
 
+    A. It's basically shorthand for having a bunch of nested functions. Whenever you have a function inside another function, that is a closure. It allows the developer to mitigate side effects as well as allowing for making private variables. 
+
 4. Describe the four principles of the 'this' keyword.
 
+    A.  1. Window Binding - the default binding when 'this' is not defined. It prints out the entire window as 'this' is given no context.
+        2. Implicit Binding - applied to objects with methods. Look to the left of the dot to see what it's referring to.
+        3. Explicit Binding - this refers to telling the function if the 'this' keyword should be using .call, .apply, or .bind
+        4. New Binding - when a new function is invoked with the 'new' keyword, the 'this' keyword will apply only to the 'new' object being built.
+
 5. Why do we need super() in an extended class?
+
+    A. so that all the attributes of the original parent object are also applied to the new objects being constructed.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
